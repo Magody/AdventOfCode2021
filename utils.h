@@ -281,4 +281,3 @@ template <class T>
 bool isInRange(T value, T min, T max){
     return value >= min && value <= max;    
 }
-

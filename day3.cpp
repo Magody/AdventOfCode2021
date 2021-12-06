@@ -4,8 +4,7 @@
 using namespace std;
 
 string day = "3";
-string path_base = "/home/magody/programming/AdventOfCode2021/";
-string path = path_base + "day" + day + "/input" + day + ".txt";
+string path = "/home/magody/programming/AdventOfCode2021/files/standard/input" + day + ".txt";
 
 
 int solve1(vector<string> values) {

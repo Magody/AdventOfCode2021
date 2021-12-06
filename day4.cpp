@@ -4,8 +4,7 @@
 using namespace std;
 
 string day = "4";
-string path_base = "/home/magody/programming/AdventOfCode2021/";
-string path = path_base + "day" + day + "/input" + day + ".txt";
+string path = "/home/magody/programming/AdventOfCode2021/files/standard/input" + day + ".txt";
 
 typedef unsigned long long longest;
 

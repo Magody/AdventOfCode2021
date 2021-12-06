@@ -4,7 +4,7 @@ using namespace std;
 
 
 string day = "2";
-string path = "/home/magody/programming/AdventOfCode2021/day" + day + "/input.txt";
+string path = "/home/magody/programming/AdventOfCode2021/files/standard/input" + day + ".txt";
 
 vector<string> splitStrings(string s, string delimiter)
 {
