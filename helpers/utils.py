@@ -79,3 +79,13 @@ def readArrayIgnoreBlankLines(path):
             array.append(val)
             
     return array
+
+def readArrayOneLine(path, mapping="none"):
+    array = []
+    with open(path, 'r') as f:
+        array = list(map(lambda s: s.replace("\n", ""), f.readline().split(",")))
+            
+        if mapping != "none":
+            array = list(map(mapping, array))
+    return array
+    
