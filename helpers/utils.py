@@ -36,6 +36,26 @@ def readMatrix(path, mapping=int):
     
     return matrix
 
+
+def readMatrixTogether(path, mapping="none"):
+    array = []
+    with open(path, 'r') as file:
+        array = file.readlines()
+        if mapping == "int":
+            array = list(map(int,array))
+        elif mapping == "float":
+            array = list(map(float,array))
+        else:
+            array = list(map(lambda s: s.replace("\n", ""),array))
+    
+    matrix = [[0 for _ in range(len(array[0]))] for _ in range(len(array))]
+    
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            matrix[i][j] = int(array[i][j]) 
+    
+    return matrix
+
 def readMatrices(path, mapping=int):
     matrices = []
     with open(path, 'r') as file:
